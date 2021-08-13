@@ -95,7 +95,7 @@ program
           },
           {
             title: 'Setting up code validators',
-            task: () => execa('npx', ['mrm', 'lint-staged'], { cwd: project })
+            task: () => execa('npx', ['mrm@2', 'lint-staged'], { cwd: project })
           }
         ])
 
