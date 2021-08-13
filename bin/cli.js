@@ -72,7 +72,6 @@ program
           {
             title: 'Copy files',
             task: () => {
-              // Copy all files
               fse.copy(srcPath, destPath, (err) => {
                 if (err) {
                   throw new Error('File copy fails', err)
@@ -86,16 +85,30 @@ program
           },
           {
             title: 'Initializing repository',
-            task: () => {
+            task: async () => {
               const branchName = branch === 'custom' ? branchCustom : branch
-              return execa('git', ['init', `--initial-branch=${branchName}`], {
-                cwd: project
-              })
+              const { stdout } = await execa('git', ['version'])
+              const newerGitVersion = 2.28
+              const gitVersion = parseFloat(stdout.replace('git version ', ''))
+
+              if (gitVersion >= newerGitVersion) {
+                return execa(
+                  'git',
+                  ['init', `--initial-branch=${branchName}`],
+                  {
+                    cwd: project
+                  }
+                )
+              } else {
+                throw new Error(
+                  'Your git version is less than 2.28, please update to the latest version: https://git-scm.com/downloads'
+                )
+              }
             }
           },
           {
             title: 'Setting up code validators',
-            task: () => execa('npx', ['mrm', 'lint-staged'], { cwd: project })
+            task: () => execa('npx', ['mrm@2', 'lint-staged'], { cwd: project })
           }
         ])
 
