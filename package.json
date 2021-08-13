@@ -1,6 +1,6 @@
 {
   "name": "webkit-cli",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "CLI tool for initialize projects with different configurations",
   "main": "bin/cli.js",
   "scripts": {
