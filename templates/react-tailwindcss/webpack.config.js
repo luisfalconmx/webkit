@@ -121,7 +121,10 @@ module.exports = (env, argv) => {
   if (Production) {
     config.optimization = {
       minimize: true,
-      minimizer: [new TerserWebpackPlugin()]
+      minimizer: [new TerserWebpackPlugin()],
+      splitChunks: {
+        chunks: 'all'
+      }
     }
   }
 
