@@ -1,10 +1,10 @@
-# webkit-cli v2.2.1
+# webkit-cli v2.2.2
 
 CLI tool for initialize projects with different templates
 
 ## Installation
 
-``` bash
+```bash
 npm install webkit-cli -g
 ```
 
@@ -12,19 +12,19 @@ npm install webkit-cli -g
 
 Initialize a new project
 
-``` bash
+```bash
 webkit new
 ```
 
 Know the version
 
-``` bash
+```bash
 webkit --version
 ```
 
 Show list of available commands
 
-``` bash
+```bash
 webkit help
 ```
 

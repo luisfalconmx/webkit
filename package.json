@@ -32,14 +32,14 @@
     "commander": "^7.2.0",
     "execa": "^0.6.3",
     "fs-extra": "^10.0.0",
-    "inquirer": "^8.1.1",
+    "inquirer": "^8.1.2",
     "listr": "^0.14.3"
   },
   "devDependencies": {
-    "eslint": "^7.30.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "husky": "^6.0.0",
