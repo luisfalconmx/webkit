@@ -8,6 +8,7 @@ import Navbar from '@components/Navbar'
 import Footer from '@components/Footer'
 
 const Home = lazy(() => import('@routes/Home'))
+const Contact = lazy(() => import('@routes/Contact'))
 const NotFound = lazy(() => import('@routes/NotFound'))
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
       <Footer />

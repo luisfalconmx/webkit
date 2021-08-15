@@ -13,8 +13,12 @@ const Home = () => {
         <title>This is title for home page</title>
       </Helmet>
 
-      <h1>{t('title')}</h1>
+      <h1>{t('home')}</h1>
+      <br />
+      <br />
+
       <button onClick={() => i18n.changeLanguage('en')}>English</button>
+      <br />
       <button onClick={() => i18n.changeLanguage('es')}>Spanish</button>
 
       <br />
