@@ -1,11 +1,17 @@
-# webkit-cli v2.2.2
+# create-webkit-app v2.2.3
 
 CLI tool for initialize projects with different templates
+
+## Fast usage
+
+```bash
+npx create-webkit-app
+```
 
 ## Installation
 
 ```bash
-npm install webkit-cli -g
+npm install create-webkit-app -g
 ```
 
 ## Usage
@@ -13,33 +19,33 @@ npm install webkit-cli -g
 Initialize a new project
 
 ```bash
-webkit new
+create-webkit-app
 ```
 
 Know the version
 
 ```bash
-webkit --version
+create-webkit-app --version
 ```
 
 Show list of available commands
 
 ```bash
-webkit help
+create-webkit-app help
 ```
 
 ## Repository
 
-https://github.com/luisfalconmx/webkit
+https://github.com/luisfalconmx/create-webkit-app
 
 ## Contribute
 
-https://github.com/luisfalconmx/webkit/blob/main/CONTRIBUTING.md
+https://github.com/luisfalconmx/create-webkit-app/blob/main/CONTRIBUTING.md
 
 ## Releases
 
-https://github.com/luisfalconmx/webkit/releases
+https://github.com/luisfalconmx/create-webkit-app/releases
 
 ## License
 
-https://github.com/luisfalconmx/webkit/blob/main/LICENSE
+https://github.com/luisfalconmx/create-webkit-app/blob/main/LICENSE
